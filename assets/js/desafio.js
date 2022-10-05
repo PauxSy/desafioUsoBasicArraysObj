@@ -24,13 +24,91 @@ let dental = [
     {hora: "13:30 AM", especialista: "EDUARDO VIÑUELA", paciente: "HUGO SANCHEZ", rut: "17665461-4", prevision: "FONASA"},
     {hora: "14:00 AM", especialista: "RAQUEL VILLASECA", paciente: "ANA SEPULVEDA", rut: "14441281-0", prevision: "ISAPRE"},
     ]
+let i=0;
+
 
 document.write("<p id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</p>");
 document.write("<p id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</p>");
 document.write("<p id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</p>");
 
-document.write("<table>");
+//Tabla 1
+document.write("<table id='tabla1' class='tabla1'>");
 document.write("<tr>")
-document.write("<th>Company</th>")
+document.write("<th>Hora</th>")
+document.write("<th>Especialista</th>")
+document.write("<th>Paciente</th>")
+document.write("<th>Rut</th>")
+document.write("<th>Previsión</th>")
 document.write("</tr>")
+
+for(i=0;i<radiologia.length;i++){
+    document.write("<tr>")
+    document.write("<th>"+radiologia[i].hora+"</th>")
+    document.write("<th>"+radiologia[i].especialista+"</th>")
+    document.write("<th>"+radiologia[i].paciente+"</th>")
+    document.write("<th>"+radiologia[i].rut+"</th>")
+    document.write("<th>"+radiologia[i].prevision+"</th>")
+    document.write("</tr>")
+}
+
 document.write("</table>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+//Tabla 2
+
+document.write("<table id='tabla2' class='tabla2'>");
+document.write("<tr>")
+document.write("<th>Hora</th>")
+document.write("<th>Especialista</th>")
+document.write("<th>Paciente</th>")
+document.write("<th>Rut</th>")
+document.write("<th>Previsión</th>")
+document.write("</tr>")
+
+for(i=0;i<traumatologia.length;i++){
+    document.write("<tr>")
+    document.write("<th>"+traumatologia[i].hora+"</th>")
+    document.write("<th>"+traumatologia[i].especialista+"</th>")
+    document.write("<th>"+traumatologia[i].paciente+"</th>")
+    document.write("<th>"+traumatologia[i].rut+"</th>")
+    document.write("<th>"+traumatologia[i].prevision+"</th>")
+    document.write("</tr>")
+}
+
+document.write("</table>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+//Tabla 3
+
+document.write("<table id='tabla2' class='tabla2'>");
+document.write("<tr>")
+document.write("<th>Hora</th>")
+document.write("<th>Especialista</th>")
+document.write("<th>Paciente</th>")
+document.write("<th>Rut</th>")
+document.write("<th>Previsión</th>")
+document.write("</tr>")
+
+for(i=0;i<dental.length;i++){
+    document.write("<tr>")
+    document.write("<th>"+dental[i].hora+"</th>")
+    document.write("<th>"+dental[i].especialista+"</th>")
+    document.write("<th>"+dental[i].paciente+"</th>")
+    document.write("<th>"+dental[i].rut+"</th>")
+    document.write("<th>"+dental[i].prevision+"</th>")
+    document.write("</tr>")
+}
+
+document.write("</table>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
