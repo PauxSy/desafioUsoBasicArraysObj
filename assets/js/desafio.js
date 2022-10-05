@@ -1,9 +1,9 @@
 let radiologia = [
-    {hora: "11:00 AM", especialista: "IGNACIO SCHULZ", nombre: "FRANCISCA ROJAS", rut: "9878782-1", prevision: "FONASA"},
-    {hora: "11:30 AM", especialista: "FEDERICO SUBERCASEAUX", nombre: "PAMELA ESTRADA", rut: "15345241-3", prevision: "ISAPRE"},
-    {hora: "15:00 AM", especialista: "FERNANDO WURTHZ", nombre: "ARMANDO LUNA", rut: "16445345-9", prevision: "ISAPRE"},
-    {hora: "15:30 AM", especialista: "ANA MARIA GODOY", nombre: "MANUEL GODOY", rut: "17666419-0", prevision: "FONASA"},
-    {hora: "16:00 AM", especialista: "PATRICIA SUAZO", nombre: "RAMON ULLOA", rut: "14989389-K", prevision: "FONASA"}
+    {hora: "11:00 AM", especialista: "IGNACIO SCHULZ", paciente: "FRANCISCA ROJAS", rut: "9878782-1", prevision: "FONASA"},
+    {hora: "11:30 AM", especialista: "FEDERICO SUBERCASEAUX", paciente: "PAMELA ESTRADA", rut: "15345241-3", prevision: "ISAPRE"},
+    {hora: "15:00 AM", especialista: "FERNANDO WURTHZ", paciente: "ARMANDO LUNA", rut: "16445345-9", prevision: "ISAPRE"},
+    {hora: "15:30 AM", especialista: "ANA MARIA GODOY", paciente: "MANUEL GODOY", rut: "17666419-0", prevision: "FONASA"},
+    {hora: "16:00 AM", especialista: "PATRICIA SUAZO", paciente: "RAMON ULLOA", rut: "14989389-K", prevision: "FONASA"}
 ]
 
 let traumatologia = [
@@ -25,3 +25,12 @@ let dental = [
     {hora: "14:00 AM", especialista: "RAQUEL VILLASECA", paciente: "ANA SEPULVEDA", rut: "14441281-0", prevision: "ISAPRE"},
     ]
 
+document.write("<p id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</p>");
+document.write("<p id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</p>");
+document.write("<p id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</p>");
+
+document.write("<table>");
+document.write("<tr>")
+document.write("<th>Company</th>")
+document.write("</tr>")
+document.write("</table>");
