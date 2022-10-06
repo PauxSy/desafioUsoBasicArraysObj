@@ -26,6 +26,16 @@ let dental = [
     ]
 let i=0;
 
+traumatologia.push({hora: "09:00 AM", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE"});
+traumatologia.push({hora: "09:30 AM", especialista: "MARIA SOLAR", paciente: "RAMIRO ANDRADE", rut: "12221451-K", prevision: "FONASA"});
+traumatologia.push({hora: "10:00 AM", especialista: "RAUL LOYOLA", paciente: "CARMEN ISLA", rut: "10112348-3", prevision: "ISAPRE"});
+traumatologia.push({hora: "10:30 AM", especialista: "ANTONIO LARENAS", paciente: "PABLO LOAYZA", rut: "13453234-1", prevision: "ISAPRE"});
+traumatologia.push({hora: "12:00 AM", especialista: "MATIAS ARAVENA", paciente: "SUSANA POBLETE", rut: "14345656-6", prevision: "FONASA"});
+
+var deletefirst = radiologia.shift();
+var deletLast = radiologia.pop();
+document.write(radiologia.paciente)
+
 document.write("<div id='primeroAndUltimo' class='container-fluid'>")
 document.write("<ul class='list-group'>")
 document.write("<li class='list-group-item' id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</li>");
