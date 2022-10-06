@@ -38,7 +38,7 @@ body {
 .imagen_footer{
    width:  400px;
    height: 250px;
-   max-width: 100%;
+   max-width: 60%;
    justify-content: center;
    align-items: center;
    display: flex;
@@ -59,7 +59,9 @@ table th {
 
 .a-logo2 {
    display: block;
-   margin-left: 250px;
+   margin-left: 490px;
    margin-right: 100px;
-   width: 50%;
+   max-width: 100%;
+   
 }
+
