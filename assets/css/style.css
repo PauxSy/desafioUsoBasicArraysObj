@@ -1,0 +1,27 @@
+body {
+    background: black;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
+
+}
+
+
+
+.table {
+    width: 100%; 
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
+ }
+
+ .h1{
+    font-size: 24px;
+    
+ }
+
+ .logo{
+   
+ }
+ 
+ table th {
+    text-align: center; 
+ }

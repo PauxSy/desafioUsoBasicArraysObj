@@ -26,15 +26,18 @@ let dental = [
     ]
 let i=0;
 
-
+document.write("<div id='primeroAndUltimo' class='container-fluid'>")
 document.write("<p id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</p>");
 document.write("<p id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</p>");
 document.write("<p id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</p>");
+document.write("</div>")
 
 //Tabla 1
-document.write("<div id='pricing' class='container-fluid'>")
+document.write("<div id='acordeon' class='accordion container-fluid'>")
 
-document.write("<text class='h1'>Tabla Radiologia</text>")
+document.write("<div id='cont1' class='container-fluid'>")
+
+document.write("<text class='h1 text-white bg-dark'>Tabla Radiologia</text>")
 document.write("<table id='tabla1' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
 document.write("<thead>")
 document.write("<tr>")
@@ -67,10 +70,10 @@ document.write("<br>");
 document.write("<br>");
 
 //Tabla 2
-document.write("<div id='pricing' class='container-fluid'>")
-document.write("<text class='h1'>Tabla Traumatología</text>")
+document.write("<div id='cont2' class='container-fluid'>")
+document.write("<text class='h1 text-white bg-dark'>Tabla Traumatología</text>")
 
-document.write("<table id='tabla2' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
+document.write("<table id='tabla2' class='table-striped table table-dark table-bordered table-border-light table-hover table-sm table-center text-center'>");
 document.write("<thead>")
 document.write("<tr>")
 document.write("<th scope='col'>#</th>")
@@ -103,8 +106,8 @@ document.write("<br>");
 
 //Tabla 3
 
-document.write("<div id='pricing' class='container-fluid'>")
-document.write("<text class='h1'>Tabla Odontología</text>")
+document.write("<div id='cont3' class='container-fluid'>")
+document.write("<text class='h1 text-white bg-dark'>Tabla Odontología</text>")
 
 document.write("<table id='tabla3' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
 document.write("<thead>")
