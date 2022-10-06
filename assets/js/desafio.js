@@ -77,7 +77,7 @@ document.write("<br>");
 
 //Tabla 2
 document.write("<div id='cont2' class='container-fluid'>")
-document.write("<text class='h1 text-light '>Horas Traumatología</text>")
+document.write("<text class='h1 text-light mx-auto'>Horas Traumatología</text>")
 document.write("<br>");
 document.write("<br>");
 document.write("<table id='tabla2' class='table-striped table table-light table-bordered table-border-light table-hover table-sm table-center text-center'>");

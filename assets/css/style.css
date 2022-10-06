@@ -22,23 +22,30 @@ body {
  .h1{
     font-size: 24px;
     margin:auto;
-    text-align: center!important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
  }
 
  .logo{
    width:  250px;
    height: 250px;
-   text-align: center;
+   justify-content: center;
+   align-items: center;
+   display: flex;
 }
- 
- table th {
-    text-align: center; 
- }
  
 .imagen_footer{
    width:  400px;
    height: 250px;
    max-width: 100%;
-   text-align:center;
+   justify-content: center;
+   align-items: center;
+   display: flex;
    margin: 0 auto;
+   opacity: 50%;
+}
+
+table th {
+   text-align: center; 
 }
