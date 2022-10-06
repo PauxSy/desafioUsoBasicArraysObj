@@ -1,27 +1,44 @@
 body {
-    background: black;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
-
+   background: rgb(85,81,156);
+   background: linear-gradient(180deg, rgba(85,81,156,1) 0%, rgba(65,65,191,1) 30%, rgba(152,215,228,1) 100%);
 }
 
+.list-group{
+   width:  800px;
+   margin:auto;
+   text-align: center;
+}
 
+.medio{
+   width:  230px;
 
+}
 .table {
-    width: 100%; 
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
+   margin:auto;
+   text-align: center;   
+   width:  900px;
  }
 
  .h1{
     font-size: 24px;
-    
+    margin:auto;
+    text-align: center!important;
  }
 
  .logo{
-   
- }
+   width:  250px;
+   height: 250px;
+   text-align: center;
+}
  
  table th {
     text-align: center; 
  }
+ 
+.imagen_footer{
+   width:  400px;
+   height: 250px;
+   max-width: 100%;
+   text-align:center;
+   margin: 0 auto;
+}

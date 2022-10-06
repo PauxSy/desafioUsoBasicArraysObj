@@ -27,25 +27,31 @@ let dental = [
 let i=0;
 
 document.write("<div id='primeroAndUltimo' class='container-fluid'>")
-document.write("<p id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</p>");
-document.write("<p id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</p>");
-document.write("<p id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</p>");
+document.write("<ul class='list-group'>")
+document.write("<li class='list-group-item' id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</li>");
+document.write("<li class='list-group-item' id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</li>");
+document.write("<li class='list-group-item' id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</li>");
+document.write("</ul>")
 document.write("</div>")
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
 
 //Tabla 1
-document.write("<div id='acordeon' class='accordion container-fluid'>")
 
 document.write("<div id='cont1' class='container-fluid'>")
 
-document.write("<text class='h1 text-white bg-dark'>Tabla Radiologia</text>")
-document.write("<table id='tabla1' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
-document.write("<thead>")
+document.write("<text class='h1 text-light '>Horas Radiologia</text>")
+document.write("<br>");
+document.write("<br>");
+document.write("<table id='tabla1' class='table table-light table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead class='table-dark'>")
 document.write("<tr>")
 
 document.write("<th scope='col'>#</th>")
 document.write("<th scope='col'>Hora</th>")
-document.write("<th scope='col'>Especialista</th>")
-document.write("<th scope='col'>Paciente</th>")
+document.write("<th scope='col' class='medio'>Especialista</th>")
+document.write("<th scope='col' class='medio'>Paciente</th>")
 document.write("<th scope='col'>Rut</th>")
 document.write("<th scope='col'>Previsión</th>")
 
@@ -71,10 +77,11 @@ document.write("<br>");
 
 //Tabla 2
 document.write("<div id='cont2' class='container-fluid'>")
-document.write("<text class='h1 text-white bg-dark'>Tabla Traumatología</text>")
-
-document.write("<table id='tabla2' class='table-striped table table-dark table-bordered table-border-light table-hover table-sm table-center text-center'>");
-document.write("<thead>")
+document.write("<text class='h1 text-light '>Horas Traumatología</text>")
+document.write("<br>");
+document.write("<br>");
+document.write("<table id='tabla2' class='table-striped table table-light table-bordered table-border-light table-hover table-sm table-center text-center'>");
+document.write("<thead class='table-dark'>")
 document.write("<tr>")
 document.write("<th scope='col'>#</th>")
 document.write("<th scope='col'>Hora</th>")
@@ -107,12 +114,14 @@ document.write("<br>");
 //Tabla 3
 
 document.write("<div id='cont3' class='container-fluid'>")
-document.write("<text class='h1 text-white bg-dark'>Tabla Odontología</text>")
+document.write("<text class='h1 text-light'>Horas Odontología</text>")
+document.write("<br>");
+document.write("<br>");
 
-document.write("<table id='tabla3' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
-document.write("<thead>")
+document.write("<table id='tabla3' class='table table-light table-striped table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead class='table-dark'>")
 document.write("<tr>")
-document.write("<th scope='col'>#</th>")
+document.write("<th scope='col table-dark'>#</th>")
 document.write("<th scope='col'>Hora</th>")
 document.write("<th scope='col'>Especialista</th>")
 document.write("<th scope='col'>Paciente</th>")
