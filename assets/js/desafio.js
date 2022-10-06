@@ -36,11 +36,14 @@ var deletefirst = radiologia.shift();
 var deletLast = radiologia.pop();
 document.write(radiologia.paciente)
 
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
 document.write("<div id='primeroAndUltimo' class='container-fluid'>")
 document.write("<ul class='list-group'>")
-document.write("<li class='list-group-item' id='rgpu'> Primer paciente: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</li>");
-document.write("<li class='list-group-item' id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</li>");
-document.write("<li class='list-group-item' id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</li>");
+document.write("<li class='list-group-item' id='rgpu'> Primer paciente Radiologia: "+radiologia[0].paciente+" - "+radiologia[0].prevision+" |  Último paciente: "+radiologia[radiologia.length-1].paciente+" - "+radiologia[radiologia.length-1].prevision+"</li>");
+document.write("<li class='list-group-item' id='trpu'> Primer paciente Traumatologia: "+traumatologia[0].paciente+" - "+traumatologia[0].prevision+" |  Último paciente: "+traumatologia[traumatologia.length-1].paciente+" - "+traumatologia[traumatologia.length-1].prevision+"</li>");
+document.write("<li class='list-group-item' id='depu'> Primer paciente Dental: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</li>");
 document.write("</ul>")
 document.write("</div>")
 document.write("<br>");

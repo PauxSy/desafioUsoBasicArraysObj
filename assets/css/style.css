@@ -27,12 +27,12 @@ body {
     display: flex;
  }
 
- .logo{
+ /*.logo{
    width:  250px;
    height: 250px;
    justify-content: center;
    align-items: center;
-   display: flex;
+   display: flex;*/
 }
  
 .imagen_footer{
@@ -48,4 +48,18 @@ body {
 
 table th {
    text-align: center; 
+}
+
+.a-logo {
+   display: block;
+   margin-left: 550px;
+   margin-right: 100px;
+   width: 50%;
+}
+
+.a-logo2 {
+   display: block;
+   margin-left: 250px;
+   margin-right: 100px;
+   width: 50%;
 }
