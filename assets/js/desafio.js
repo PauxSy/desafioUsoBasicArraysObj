@@ -32,83 +32,104 @@ document.write("<p id='trpu'> Primer paciente: "+traumatologia[0].paciente+" - "
 document.write("<p id='depu'> Primer paciente: "+dental[0].paciente+" - "+dental[0].prevision+" |  Último paciente: "+dental[dental.length-1].paciente+" - "+dental[dental.length-1].prevision+"</p>");
 
 //Tabla 1
-document.write("<table id='tabla1' class='tabla1'>");
-document.write("<tr>")
-document.write("<th>Hora</th>")
-document.write("<th>Especialista</th>")
-document.write("<th>Paciente</th>")
-document.write("<th>Rut</th>")
-document.write("<th>Previsión</th>")
-document.write("</tr>")
+document.write("<div id='pricing' class='container-fluid'>")
 
+document.write("<text class='h1'>Tabla Radiologia</text>")
+document.write("<table id='tabla1' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead>")
+document.write("<tr>")
+
+document.write("<th scope='col'>#</th>")
+document.write("<th scope='col'>Hora</th>")
+document.write("<th scope='col'>Especialista</th>")
+document.write("<th scope='col'>Paciente</th>")
+document.write("<th scope='col'>Rut</th>")
+document.write("<th scope='col'>Previsión</th>")
+
+document.write("</tr>")
+document.write("</thead>")
+
+document.write("<tbody>")
 for(i=0;i<radiologia.length;i++){
     document.write("<tr>")
-    document.write("<th>"+radiologia[i].hora+"</th>")
-    document.write("<th>"+radiologia[i].especialista+"</th>")
-    document.write("<th>"+radiologia[i].paciente+"</th>")
-    document.write("<th>"+radiologia[i].rut+"</th>")
-    document.write("<th>"+radiologia[i].prevision+"</th>")
+    document.write("<th scope='row'>"+i+"</th>")
+    document.write("<td>"+radiologia[i].hora+"</th>")
+    document.write("<td>"+radiologia[i].especialista+"</th>")
+    document.write("<td>"+radiologia[i].paciente+"</th>")
+    document.write("<td>"+radiologia[i].rut+"</th>")
+    document.write("<td>"+radiologia[i].prevision+"</th>")
     document.write("</tr>")
 }
-
+document.write("</tbody>");
 document.write("</table>");
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
+document.write("</div>");
 document.write("<br>");
 document.write("<br>");
 
 //Tabla 2
+document.write("<div id='pricing' class='container-fluid'>")
+document.write("<text class='h1'>Tabla Traumatología</text>")
 
-document.write("<table id='tabla2' class='tabla2'>");
+document.write("<table id='tabla2' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead>")
 document.write("<tr>")
-document.write("<th>Hora</th>")
-document.write("<th>Especialista</th>")
-document.write("<th>Paciente</th>")
-document.write("<th>Rut</th>")
-document.write("<th>Previsión</th>")
+document.write("<th scope='col'>#</th>")
+document.write("<th scope='col'>Hora</th>")
+document.write("<th scope='col'>Especialista</th>")
+document.write("<th scope='col'>Paciente</th>")
+document.write("<th scope='col'>Rut</th>")
+document.write("<th scope='col'>Previsión</th>")
 document.write("</tr>")
+document.write("</thead>")
+
+
 
 for(i=0;i<traumatologia.length;i++){
     document.write("<tr>")
-    document.write("<th>"+traumatologia[i].hora+"</th>")
-    document.write("<th>"+traumatologia[i].especialista+"</th>")
-    document.write("<th>"+traumatologia[i].paciente+"</th>")
-    document.write("<th>"+traumatologia[i].rut+"</th>")
-    document.write("<th>"+traumatologia[i].prevision+"</th>")
+    document.write("<th scope='row'>"+i+"</th>")
+    document.write("<td>"+traumatologia[i].hora+"</th>")
+    document.write("<td>"+traumatologia[i].especialista+"</th>")
+    document.write("<td>"+traumatologia[i].paciente+"</th>")
+    document.write("<td>"+traumatologia[i].rut+"</th>")
+    document.write("<td>"+traumatologia[i].prevision+"</th>")
     document.write("</tr>")
 }
 
+document.write("</tbody>");
 document.write("</table>");
+document.write("</div>");
 document.write("<br>");
 document.write("<br>");
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
+
 //Tabla 3
 
-document.write("<table id='tabla2' class='tabla2'>");
+document.write("<div id='pricing' class='container-fluid'>")
+document.write("<text class='h1'>Tabla Odontología</text>")
+
+document.write("<table id='tabla3' class='table table-dark table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead>")
 document.write("<tr>")
-document.write("<th>Hora</th>")
-document.write("<th>Especialista</th>")
-document.write("<th>Paciente</th>")
-document.write("<th>Rut</th>")
-document.write("<th>Previsión</th>")
+document.write("<th scope='col'>#</th>")
+document.write("<th scope='col'>Hora</th>")
+document.write("<th scope='col'>Especialista</th>")
+document.write("<th scope='col'>Paciente</th>")
+document.write("<th scope='col'>Rut</th>")
+document.write("<th scope='col'>Previsión</th>")
 document.write("</tr>")
+document.write("</thead>")
 
 for(i=0;i<dental.length;i++){
     document.write("<tr>")
-    document.write("<th>"+dental[i].hora+"</th>")
-    document.write("<th>"+dental[i].especialista+"</th>")
-    document.write("<th>"+dental[i].paciente+"</th>")
-    document.write("<th>"+dental[i].rut+"</th>")
-    document.write("<th>"+dental[i].prevision+"</th>")
+    document.write("<th scope='row'>"+i+"</th>")
+    document.write("<td>"+dental[i].hora+"</th>")
+    document.write("<td>"+dental[i].especialista+"</th>")
+    document.write("<td>"+dental[i].paciente+"</th>")
+    document.write("<td>"+dental[i].rut+"</th>")
+    document.write("<td>"+dental[i].prevision+"</th>")
     document.write("</tr>")
 }
 
+document.write("</tbody>");
 document.write("</table>");
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
+document.write("</div>");
+

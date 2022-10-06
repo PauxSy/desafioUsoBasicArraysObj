@@ -1,0 +1,17 @@
+.table {
+    margin: auto;
+    width: 25%; 
+ }
+
+
+ table th {
+    text-align: center; 
+ }
+
+ .container-fluid{
+    margin:1em;
+ }
+
+ .h1{
+    font-size: 16px;
+ }
