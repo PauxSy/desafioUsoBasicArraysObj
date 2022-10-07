@@ -255,4 +255,67 @@ document.write("<br>");
 document.write("<br>");
 document.write("<br>");
 
+//Pacientes ISAPRE
+
+document.write("<br>");
+document.write("<br>");
+document.write("<div id='cont3' class='container-fluid'>")
+document.write("<text class='h1'>Todos los pacientes Dentales con ISAPRE</text>")
+document.write("<br>");
+document.write("<br>");
+
+document.write("<table id='tabla3' class='table caption-top table-light table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead class='table-custom4'>")
+document.write("<tr>")
+document.write("<th scope='col'>Paciente</th>")
+document.write("</tr>")
+document.write("</thead>")
+
+for(i=0;i<dental.length;i++){
+    if (dental[i].prevision=="ISAPRE"){
+        document.write("<tr>")
+        document.write("<td>"+dental[i].paciente+"</td>")
+        document.write("</tr>")
+    }
+}
+
+document.write("</tbody>");
+document.write("</table>");
+document.write("</div>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+//Pacientes FONASA
+
+document.write("<br>");
+document.write("<br>");
+document.write("<div id='cont3' class='container-fluid'>")
+document.write("<text class='h1'>Todos los pacientes de Traumatología con FONASA</text>")
+document.write("<br>");
+document.write("<br>");
+
+document.write("<table id='tabla3' class='table caption-top table-light table-bordered table-hover table-sm table-center text-center'>");
+document.write("<thead class='table-custom3'>")
+document.write("<tr>")
+document.write("<th scope='col'>Paciente</th>")
+document.write("</tr>")
+document.write("</thead>")
+
+for(i=0;i<traumatologia.length;i++){
+    if (traumatologia[i].prevision=="FONASA"){
+        document.write("<tr>")
+        document.write("<td>"+traumatologia[i].paciente+"</td>")
+        document.write("</tr>")
+    }
+}
+
+document.write("</tbody>");
+document.write("</table>");
+document.write("</div>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
 
